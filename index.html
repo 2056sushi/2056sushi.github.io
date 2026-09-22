@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aadit — Portfolio</title>
+<meta name="description" content="Computer Science & Psychology at the University of Michigan. Interpretability research, full-stack projects, and software engineering work." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- LEFT RAIL -->
+  <aside class="rail">
+    <div class="rail-inner">
+      <h1 class="name">Aadit <span class="edit-me">[Last Name]</span></h1>
+      <p class="tagline">Computer Science &amp; Psychology<br>University of Michigan</p>
+
+      <nav class="nav" aria-label="Section navigation">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="rail-links">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="https://github.com/EDIT-ME" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/EDIT-ME" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:EDIT-ME@umich.edu">Email</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-line">
+        I study how neural networks represent the world, and I build software people actually use.
+      </p>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section id="work" class="section">
+      <h2 class="section-title">Selected work</h2>
+
+      <div class="row">
+        <div class="row-meta">
+          <span class="meta-tag">Full-stack</span>
+          <span class="meta-tag">1,000+ users</span>
+        </div>
+        <div class="row-body">
+          <h3 class="row-title">Refugee support platform</h3>
+          <p class="row-desc">A full-stack web application built to help Ukrainian refugees access support and resources. Designed, built, and shipped end-to-end — now used by over a thousand people.</p>
+          <a class="row-link edit-me" href="#">View project →</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">
+          <span class="meta-tag">LangChain</span>
+          <span class="meta-tag">ChromaDB</span>
+          <span class="meta-tag">Llama 3.3</span>
+        </div>
+        <div class="row-body">
+          <h3 class="row-title">Retrieval-augmented assistant</h3>
+          <p class="row-desc">A RAG pipeline pairing a vector store with Groq-hosted Llama 3.3, wrapped in a Streamlit interface, to answer questions grounded in a real document set rather than the model's memory.</p>
+          <a class="row-link edit-me" href="#">View project →</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">
+          <span class="meta-tag">scikit-learn</span>
+          <span class="meta-tag">Time-series CV</span>
+        </div>
+        <div class="row-body">
+          <h3 class="row-title">Stock movement predictor</h3>
+          <p class="row-desc">A machine learning pipeline testing whether short-term stock movement is predictable from historical price data, using proper time-series cross-validation. The honest result: no model consistently beat the naive baseline — a finding that says more about market efficiency than about the code.</p>
+          <a class="row-link edit-me" href="#">View project →</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">
+          <span class="meta-tag">Open source</span>
+          <span class="meta-tag">Oppia</span>
+        </div>
+        <div class="row-body">
+          <h3 class="row-title">CI coverage tooling for Oppia</h3>
+          <p class="row-desc">Open-source contribution improving how CI frontend coverage failures are reported, making it easier for contributors to see exactly what broke and why. Built with Rithik Polavaram.</p>
+          <a class="row-link edit-me" href="#">View pull request →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <h2 class="section-title">Research</h2>
+
+      <div class="paper">
+        <p class="paper-venue">EurIPS 2025 · Copenhagen</p>
+        <h3 class="paper-title">Interpretability as Alignment: Making Internal Understanding a Design Principle</h3>
+        <p class="paper-gloss">Argues that mechanistic interpretability should be a constraint built into how models are designed, not a diagnostic applied after the fact.</p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-venue">Accepted, AAAI 2027</p>
+        <h3 class="paper-title">What Do Compliance Detectors Read?</h3>
+        <p class="paper-gloss edit-me">[Add one plain-English sentence on what this paper found — write it the way you'd explain it to a non-researcher.]</p>
+      </div>
+
+      <div class="paper paper-current">
+        <p class="paper-venue">Ongoing, Lexsi AI</p>
+        <p class="row-desc">Currently working on circuit discovery for indirect object identification on LLaMA, using TransformerLens and activation patching to localize where the model resolves the task.</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="exp-row">
+        <div class="exp-meta">
+          <p class="exp-org">Lexsi AI</p>
+          <p class="exp-dates edit-me">[Dates]</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">AI / ML Research Intern</p>
+          <p class="row-desc">Mechanistic interpretability research using TransformerLens, including circuit-level analysis of model internals.</p>
+        </div>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-meta">
+          <p class="exp-org">Aurionpro UK Limited</p>
+          <p class="exp-dates edit-me">[Dates]</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role edit-me">[Your role/title]</p>
+          <p class="row-desc edit-me">[One or two lines on what you worked on.]</p>
+        </div>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-meta">
+          <p class="exp-org">Mesmerise VR</p>
+          <p class="exp-dates edit-me">[Dates]</p>
+        </div>
+        <div class="exp-body">
+          <p class="exp-role">AR / VR Developer</p>
+          <p class="row-desc">Built AR/VR experiences in C++ and C# with Unity, targeting Meta Quest 2.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+      <p class="about-text">
+        I'm a Computer Science and Psychology student at the University of Michigan. The pairing isn't incidental —
+        psychology is where I think about how minds represent and reason, and it's the same lens I bring to
+        interpretability research: trying to understand what's actually happening inside a model, not just what
+        it outputs. Outside research, I like building software that ships and gets used.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Aadit <span class="edit-me">[Last Name]</span></p>
+      <div class="footer-links">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="https://github.com/EDIT-ME" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/EDIT-ME" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:EDIT-ME@umich.edu">Email</a>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>
